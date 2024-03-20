@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Ojuju:wght@200..800&display=swap');
+
 body {
     min-height: 100vh;
+    font-family: Ojuju, sans-serif;
+    background: whitesmoke;
+}
+
+.title {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+/* Loader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.loadsign {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Image container */
+.image-container {
+    margin: 10px 30%;
+}
+
+.image-container img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Media query: Large Smartphone */
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .image-container {
+        margin: 10px;
+    }
 }
